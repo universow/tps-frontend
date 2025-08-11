@@ -4,7 +4,7 @@ Gestión de usuarios (CRUD)
 Productos
 Reporte de los 5 mas vendidos.
 
-Una vez se realice el login se ingresa por la URL: http://localhost:4200/ppal para ver el menú de opciones.
+Una vez se realice el login se ingresa por la URL: http://localhost:4200/ppal para ver el menú de opciones ( En el código redirige a /user ya que se tenía la idea de gestionar el cambio de contraseña por ese módulo, sin embargo no se implememtó. Para poder navegar por el sistema lo correcto es que redirija a /ppal).
 
 # AppTpsO
 
