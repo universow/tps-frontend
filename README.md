@@ -1,3 +1,11 @@
+Los módulos que se lograron desarrollar para cumplir con las funcionalidades solicitadas son, luego de ingresar por http://localhost:4200/login
+Login: La idea de este módulo es que se encripte la contraseña a través de un algoritmo para guradarlo en la base de datos.
+Gestión de usuarios (CRUD)
+Productos
+Reporte de los 5 mas vendidos.
+
+Una vez se realice el login se ingresa por la URL: http://localhost:4200/ppal para ver el menú de opciones.
+
 # AppTpsO
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
