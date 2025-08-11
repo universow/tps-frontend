@@ -1,0 +1,31 @@
+<nav class= "navbar bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="" alt="Logo" width="280" height="180">
+        </a>
+        <div class="col-md-4">
+            <h1>Top 5 de lo más vendido</h1>            
+        </div>
+        <img src="http://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" width="115" height="100">
+    </div>
+</nav>
+
+<div class="col-md-12 p-2">
+    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="fa fa-save"></i> Nuevo</button>
+    <table class="table mt-2 table-bordered">
+        <thead class="table-primary">
+            <tr>
+                <th>Codigo Producto</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listReports">
+                <td>{{item.cod}}</td>
+                <td>{{item.descripcion}}</td>
+                <td>{{item.cant}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

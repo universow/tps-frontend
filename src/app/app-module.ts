@@ -3,14 +3,28 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { Product } from './components/product/product';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { User } from './components/user/user';
+import { Login } from './components/login/login';
+import { Ppal } from './components/ppal/ppal';
+import { Reports } from './components/reports/reports';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Product,
+    User,
+    Login,
+    Ppal,
+    Reports
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

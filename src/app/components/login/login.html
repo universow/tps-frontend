@@ -1,0 +1,50 @@
+<div class="wrapper">
+  <div class="body">
+    <form [formGroup]="formLogin" action="">
+        <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" formControlName="nombre_usuario" placeholder="name@example.com">
+        <label for="floatingInput">Usuario</label>
+        </div>
+        <div class="form-floating" id="dvPassword" style="display:none;">
+          <input type="password" class="form-control" id="floatingPassword" formControlName="contrasena" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>  
+        <div>
+            <div id="dvbtnBuscar">
+              <button type="button" class="btn btn-success btn-sm" (click)="buscar(formLogin.controls['nombre_usuario'].value)">Buscar </button>
+            </div>      
+            <div id="dvbtnIngresar" style="display:none;">
+              <button type="button" class="btn btn-success btn-sm" routerLink="/user" (click)="validarusu(formLogin.controls['nombre_usuario'].value, formLogin.controls['contrasena'].value)" >Ingresar </button>
+            </div>
+            <div class="alert alert-danger" role="alert" id="dvError" style="display:none;">
+              Usuario o Contraseña incorrectos.
+            </div>            
+            <button type="button" class="btn btn-success btn-sm">Salir </button>
+        </div>     
+    </form>
+  </div>
+</div>
+<br>
+<br>
+<div class="wrapper">
+  <div class="body">
+    <form [formGroup]="formLogin" action="" style="display:none;" id="dvCrearClave">
+        <div class="col-md-4">
+            <h1>Debes cambiar tu Contraseña</h1>            
+        </div>
+        <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="name@example.com">
+        <label for="floatingPassword">Nueva Contraseña</label>
+        </div>
+        <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" formControlName="nueva_contrasena" placeholder="Password">
+        <label for="floatingPassword">Confirmar Contraseña </label>
+        </div>  
+        <div>
+            <button type="button" class="btn btn-success btn-sm" (click)="savep(codUsuario, formLogin.controls['nueva_contrasena'].value)" >Guardar </button>
+            <button type="button" class="btn btn-success btn-sm">Salir </button>
+        </div>     
+    </form>
+  </div>
+</div>
+
